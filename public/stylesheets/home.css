@@ -1,3 +1,14 @@
-body{
+body {
 	background-color: #F9F2E7;
+}
+
+h1.logo{
+	background: url("/images/logo.png") no-repeat;
+	text-indent: -99999px;
+	width: 400px;
+	height: 100px;
+	background-color: blue;
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
 }
