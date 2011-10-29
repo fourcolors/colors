@@ -1,12 +1,21 @@
-	<html>
-		<head>
-			<title> Colors Mural Design </title>
-			<%= stylesheet_link_tag "/stylesheets/reset.css" %>
-			<%= stylesheet_link_tag "/stylesheets/home.css" %>
-		</head>
+<html>
+	<head>
+		<title> Colors Mural Design </title>
+		<%= stylesheet_link_tag "/stylesheets/reset.css" %>
+		<%= stylesheet_link_tag "/stylesheets/home.css" %>
+		<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Hammersmith+One" %>
+	</head>
 
-		<body>
+	<body>
+		<container>
 			<h1 class="logo">Logo</h1>
-			<p>We create quality, professional murals that are as unique as you.</p>
-		</body>
-	 </html>
+
+			<div id="showcase">
+				<header>We create quality, professional murals that are as unique as you.</header>
+				<% 1.upto(4) do %>
+					<%= image_tag "http://placehold.it/200x150" %>
+				<% end %>
+			</div>
+		</container>
+	</body>
+ </html>
