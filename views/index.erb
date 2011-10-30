@@ -2,20 +2,25 @@
 	<head>
 		<title> Colors Mural Design </title>
 		<%= stylesheet_link_tag "/stylesheets/reset.css" %>
+		<%= stylesheet_link_tag "/stylesheets/960.css" %>
 		<%= stylesheet_link_tag "/stylesheets/home.css" %>
 		<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Hammersmith+One" %>
 	</head>
 
 	<body>
-		<container>
-			<h1 class="logo">Logo</h1>
+		<div class="container_12">
+			<h1 class="grid_4 push_4 logo">Logo</h1>
+			<div class="clear"></div>
 
-			<div id="showcase">
-				<header>We create quality, professional murals that are as unique as you.</header>
+			<section id="showcase" class="grid_12">
+				<header class="grid_12 push_2 alpha omega">We create quality, professional murals that are as unique as you.</header>
+				<div class="clear"></div>
+
 				<% 1.upto(4) do %>
-					<%= image_tag "http://placehold.it/200x150" %>
+					<%= image_tag "http://placehold.it/200x150", :class => "grid_3 alpha omega" %>
 				<% end %>
-			</div>
-		</container>
+
+			</section>
+		</div>
 	</body>
  </html>
