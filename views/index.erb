@@ -10,18 +10,13 @@
 	</head>
 
 	<body>
-		<div class="container_12">
-			<h1 class="grid_4 push_4 logo">Logo</h1>
-			<div class="clear"></div>
-
-			<section id="showcase" class="grid_12">
-				<header class="grid_12 push_2 alpha omega">We create quality, professional murals that are as unique as you.</header>
-				<div class="clear"></div>
-
+		<div class="container">
+			<h1 class="logo">Logo</h1>
+			<section id="showcase">
+				<header>We create quality, professional murals that are as unique as you.</header>
 				<% 1.upto(4) do %>
-					<%= image_tag "http://placehold.it/200x150", :class => "grid_3 alpha omega" %>
+					<%= image_tag "http://placehold.it/200x150" %>
 				<% end %>
-
 			</section>
 		</div>
 	</body>
